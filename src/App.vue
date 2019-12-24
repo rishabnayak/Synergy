@@ -1,23 +1,17 @@
 <template>
-  <div id="app">
-    <navigation />
+  <v-app>
     <router-view />
-  </div>
+  </v-app>
 </template>
 
 <script>
-import navigation from "@/components/navigation.vue";
 import store from "@/store/index.js";
 export default {
   name: "App",
   store,
-  components: {
-    navigation
-  },
+  components: {},
   data() {
     return {};
   }
 };
 </script>
-
-<style></style>

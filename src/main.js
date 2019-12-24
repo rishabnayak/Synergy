@@ -2,7 +2,9 @@ import Vue from "vue";
 import App from "./App";
 import router from "@/router/index.js";
 import store from "@/store/index.js";
-import firebase from "firebase";
+import firebase from "firebase/app";
+import "firebaseui/dist/firebaseui.css";
+import vuetify from "./plugins/vuetify";
 
 Vue.config.productionTip = false;
 
@@ -11,10 +13,11 @@ firebase.auth().onAuthStateChanged(async () => {
   if (!app) {
     await store.dispatch("setUser");
     new Vue({
-      el: "#app",
       router,
-      components: { App },
-      template: "<App/>"
-    });
+      store,
+      vuetify,
+      render: h => h(App)
+    }).$mount("#app");
   }
 });
+export const db = firebase.firestore();
