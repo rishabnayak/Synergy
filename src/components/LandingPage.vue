@@ -1,5 +1,5 @@
 <template>
-  <div v-bind:style="{ background: bg, width: bgWidth, height: bgHeight }">
+  <div :style="{ background: bg, width: bgWidth, height: bgHeight }">
     <v-container fill-height text-center>
       <v-layout align-center wrap>
         <v-row>

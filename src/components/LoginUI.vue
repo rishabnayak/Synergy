@@ -1,5 +1,5 @@
 <template>
-  <div v-bind:style="{ background: bg, width: bgWidth, height: bgHeight }">
+  <div :style="{ background: bg, width: bgWidth, height: bgHeight }">
     <v-layout text-center wrap>
       <v-row>
         <v-col>
@@ -20,15 +20,7 @@
 <script>
 import { authUI, authUIConfig } from "../firebase/init";
 export default {
-  name: "authUI",
-  computed: {
-    user() {
-      return this.$store.state.user;
-    }
-  },
-  mounted() {
-    authUI.start("#firebaseui-auth-container", authUIConfig);
-  },
+  name: "AuthUI",
   data() {
     return {
       bg:
@@ -36,6 +28,14 @@ export default {
       bgWidth: "100%",
       bgHeight: "100%"
     };
+  },
+  computed: {
+    user() {
+      return this.$store.state.user;
+    }
+  },
+  mounted() {
+    authUI.start("#firebaseui-auth-container", authUIConfig);
   }
 };
 </script>

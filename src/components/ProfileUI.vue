@@ -31,20 +31,20 @@
               <v-flex xs12>
                 <v-select
                   v-if="role == null"
+                  v-model="role"
                   :items="roles"
                   label="User Role"
-                  v-model="role"
                   :rules="roleRules"
                 ></v-select>
                 <v-text-field
                   v-else
-                  label="User Role"
                   v-model="role"
+                  label="User Role"
                   :disabled="true"
                 ></v-text-field>
               </v-flex>
             </v-layout>
-            <v-layout row v-if="role == 'Admin' || role == 'Inmate'">
+            <v-layout v-if="role == 'Admin' || role == 'Inmate'" row>
               <v-flex xs12>
                 <v-combobox
                   v-if="location == null"
@@ -55,13 +55,13 @@
                 />
                 <v-text-field
                   v-else
-                  label="Prison Location"
                   v-model="location"
+                  label="Prison Location"
                   :disabled="true"
                 ></v-text-field>
               </v-flex>
             </v-layout>
-            <v-btn @click="updateProfile" color="primary">Update</v-btn>
+            <v-btn color="primary" @click="updateProfile">Update</v-btn>
           </v-form>
         </v-card-text>
       </v-card>
@@ -70,15 +70,10 @@
 </template>
 
 <script>
-import { db } from "../firebase/init";
+import { db } from "../firebase/init.js";
 import store from "../store";
 export default {
-  name: "profileUI",
-  computed: {
-    user() {
-      return this.$store.state.user;
-    }
-  },
+  name: "ProfileUI",
   data() {
     return {
       name: null,
@@ -93,6 +88,11 @@ export default {
       locationRules: [val => !!val || "Location Required"],
       roles: ["Friends and Family", "Inmate"]
     };
+  },
+  computed: {
+    user() {
+      return this.$store.state.user;
+    }
   },
   async mounted() {
     await store.dispatch("getUser");
