@@ -1,5 +1,5 @@
 # Synergy
-[![Build]](https://github.com/rishabnayak/synergy/workflows/.github/workflows/buildtest.yml/badge.svg)
+[![Actions Status](https://github.com/rishabnayak/synergy/workflows/.github/workflows/buildtest.yml/badge.svg)](https://github.com/rishabnayak/synergy/actions)
 [![License](http://img.shields.io/badge/License-MIT-brightgreen.svg)](./LICENSE)
 
 Synergy is a Team Building Platform For Hackathons. Built with Vue.js, Firebase and Python.
