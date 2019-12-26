@@ -7,7 +7,7 @@ const files = glob.sync("./**/*.function.js", {
 
 admin.initializeApp();
 
-//Deploys all the functions in the format separate_dir/thisfunc.function.js to firebase
+// Deploys all the functions in the format separate_dir/thisfunc.function.js to Firebase
 files.forEach(file => {
   const functionModule = require(file);
   const functionNames = Object.keys(functionModule);
