@@ -64,3 +64,7 @@ To deploy only functions,
 ```bash
 firebase deploy --only functions
 ```
+
+## Contributing
+
+To contribute to Synergy, view our [contribution guide](https://github.com/rishabnayak/Synergy/blob/master/CONTRIBUTING.md).
