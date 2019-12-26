@@ -35,5 +35,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 With an authenticated @firebase/app object,
 
 ```javascript
-firebase.functions().httpsCallable("name-of-function")(<input_data>).then(data => {callback})
+firebase.functions().httpsCallable("name-of-function")(input_data).then(data => {...})
 ```
