@@ -22,7 +22,7 @@ export default {
         // throwing error
         alert("You should enter a name!");
       } else {
-        // TODO: replace with a firebase function
+        // TODO: replace with a firebase function. params (teamName)
         // - Check that the user does not have a team
         // - Create a Team
         // - Link user to that team via teamID

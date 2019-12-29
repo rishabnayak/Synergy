@@ -8,13 +8,12 @@ export default {
   name: "LeaveTeamButton",
   methods: {
     leaveTeam: function() {
-      // TODO: replace with a firebase function
+      // TODO: replace with a firebase function. params: None
       // - Verify that user has a team and get that team
       // - Remove that userID from team member list
       // - Remove the teamID from user record
 
       // ===================================
-      console.log("What");
       let userID = this.$store.getters.getUser.uid;
       console.log(userID);
       let userRef = db.collection("users").doc(userID);
