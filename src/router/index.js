@@ -25,6 +25,22 @@ const routes = [
     meta: {
       requiresAuth: false
     }
+  },
+  {
+    path: "/recommendations",
+    name: "recommendations",
+    component: () => import("@/views/Recs.vue"),
+    meta: {
+      requiresAuth: true
+    }
+  },
+  {
+    path: "/team",
+    name: "team",
+    component: () => import("@/views/Team.vue"),
+    meta: {
+      requiresAuth: true
+    }
   }
 ];
 
