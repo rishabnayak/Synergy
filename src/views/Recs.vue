@@ -4,8 +4,8 @@
     <p>{{ user.uid }}</p>
     <UserProfile
       v-for="profile in recProfiles"
-      v-bind:key="profile.id"
-      v-bind:user="profile"
+      :key="profile.id"
+      :user="profile"
     ></UserProfile>
   </div>
 </template>
@@ -40,6 +40,5 @@ export default {
       return this.$store.getters.getUser;
     }
   }
-
 };
 </script>
