@@ -32,7 +32,7 @@ export default {
         // ======================================
         let userID = this.$store.getters.getUser.uid;
         console.log(userID);
-        let userRef = db.collection("users").doc("MT0LhHggQaeo62pcRbnLtrIMdFI3");
+        let userRef = db.collection("users").doc(userID);
         let getUser = userRef.get().then(userDoc => {
           if (!userDoc.exists) {
             console.log(`Cannot find user id ${userID}`);
@@ -58,7 +58,8 @@ export default {
                           let teamInviteData = {
                             inviterID: userID,
                             inviteeID: inviteeDoc.data().uid,
-                            teamID: teamID
+                            teamID: teamID,
+                            rejected: false
                           };
 
                           let addInvitation = db
