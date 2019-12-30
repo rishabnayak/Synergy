@@ -8,5 +8,5 @@ module.exports.createTeam = functions.https.onCall(async (data, context) => {
   let ref = await db.collection("teams").add(data.teamData);
   let teamID = ref.id;
   await userRef.update({ teamID: teamID });
-  return;
+  return teamID;
 });

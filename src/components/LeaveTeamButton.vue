@@ -1,5 +1,5 @@
 <template>
-  <button @click="leaveTeam">Leave Team</button>
+  <v-btn color="error" @click="leaveTeam">Leave Team</v-btn>
 </template>
 
 <script>
@@ -17,6 +17,7 @@ export default {
         teamID: this.user.teamID,
         userID: this.user.uid
       });
+      this.$store.dispatch("setUser");
     }
   }
 };
