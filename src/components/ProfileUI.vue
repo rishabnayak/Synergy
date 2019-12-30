@@ -29,35 +29,11 @@
             </v-layout>
             <v-layout row>
               <v-flex xs12>
-                <v-select
-                  v-if="role == null"
-                  v-model="role"
-                  :items="roles"
-                  label="User Role"
-                  :rules="roleRules"
-                ></v-select>
                 <v-text-field
-                  v-else
-                  v-model="role"
-                  label="User Role"
-                  :disabled="true"
-                ></v-text-field>
-              </v-flex>
-            </v-layout>
-            <v-layout v-if="role == 'Admin' || role == 'Inmate'" row>
-              <v-flex xs12>
-                <v-combobox
-                  v-if="location == null"
-                  v-model="location"
-                  :items="prisons"
-                  :rules="locationRules"
-                  label="Prison Location"
-                />
-                <v-text-field
-                  v-else
-                  v-model="location"
-                  label="Prison Location"
-                  :disabled="true"
+                  v-model="originUID"
+                  label="Hackathon UID"
+                  :rules="originUIDRules"
+                  name="uid"
                 ></v-text-field>
               </v-flex>
             </v-layout>
@@ -70,23 +46,17 @@
 </template>
 
 <script>
-import { db } from "../firebase/init.js";
 import store from "../store";
+import { functions } from "../firebase/init";
 export default {
   name: "ProfileUI",
   data() {
     return {
       name: null,
-      role: null,
       email: null,
-      calEvents: null,
-      contacts: null,
-      valid: false,
-      location: null,
-      prisons: [],
-      roleRules: [val => !!val || "Role Required"],
-      locationRules: [val => !!val || "Location Required"],
-      roles: ["Friends and Family", "Inmate"]
+      originUID: null,
+      originUIDRules: [val => !!val || "Origin UID Required"],
+      valid: false
     };
   },
   computed: {
@@ -97,48 +67,20 @@ export default {
   async mounted() {
     await store.dispatch("getUser");
     this.name = this.user.displayName;
-    this.role = this.user.role;
     this.email = this.user.email;
-    this.calEvents = this.user.calEvents;
-    this.contacts = this.user.contacts;
-    this.location = this.user.location;
-    this.getPrison();
+    this.originUID = this.user.originUID;
   },
   methods: {
     async updateProfile() {
       if (this.$refs.form.validate()) {
-        const ref = db.collection("users").doc(this.user.uid);
-        if (this.location) {
-          await ref
-            .update({
-              role: this.role,
-              location: this.location
-            })
-            .then(() => {
-              this.$store.dispatch("setUser").then(() => {
-                this.$router.push("/user");
-              });
-            });
-        } else {
-          await ref
-            .update({
-              role: this.role
-            })
-            .then(() => {
-              this.$store.dispatch("setUser").then(() => {
-                this.$router.push("/user");
-              });
-            });
-        }
+        await functions.httpsCallable("updateOriginUID")({
+          uid: this.user.uid,
+          originUID: this.originUID
+        });
+        this.$store.dispatch("setUser").then(() => {
+          this.$router.push("/team");
+        });
       }
-    },
-    async getPrison() {
-      let snapshot = await db.collection("users").get();
-      snapshot.forEach(doc => {
-        if (doc.data().location) {
-          this.prisons.push(doc.data().location);
-        }
-      });
     }
   }
 };

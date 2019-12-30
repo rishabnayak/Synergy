@@ -1,9 +1,9 @@
 <template>
-  <button @click="leaveTeam"> Leave Team </button>  
+  <button @click="leaveTeam">Leave Team</button>
 </template>
 
 <script>
-import { db } from "../firebase/init";
+import { db, functions } from "../firebase/init";
 export default {
   name: "LeaveTeamButton",
   methods: {
@@ -15,9 +15,8 @@ export default {
 
       // ===================================
       let userID = this.$store.getters.getUser.uid;
-      console.log(userID);
       let userRef = db.collection("users").doc(userID);
-      let getUser = userRef.get().then(doc => {
+      userRef.get().then(doc => {
         if (!doc.exists) {
           console.log(`Cannot find user id ${userID}`);
         } else {
@@ -26,27 +25,20 @@ export default {
           console.log("Team ID", teamID);
           if (teamID != "") {
             let teamRef = db.collection("teams").doc(teamID);
-            let getTeam = teamRef.get().then(doc => {
+            let getTeam = teamRef.get().then(async doc => {
               if (!doc.exists) {
                 console.log(`Cannot find team ${teamID}`);
               } else {
-                let teamMembers = doc.data().teamMembers;
-                teamRef.update({
-                  teamMembers: teamMembers.filter(memberID => memberID != userID)
+                await functions.httpsCallable("leaveTeam")({
+                  teamID: teamID,
+                  userID: userID
                 });
               }
             });
           }
-
-          // remove teamID from user record
-          userRef.update({
-            teamID: ""
-          });
         }
       });
-      // =================================== END OF FIREBASE FUNCTION
     }
   }
-}
-
+};
 </script>
