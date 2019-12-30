@@ -2,6 +2,7 @@ import firebase from "firebase/app";
 const firebaseui = require("firebaseui");
 import "firebase/auth";
 import "firebase/firestore";
+import "firebase/functions";
 
 const config = {
   apiKey: "AIzaSyAKyPPIPB-oTWbSHnP90w28ICM8txxxms0",
@@ -17,6 +18,7 @@ const config = {
 const app = firebase.initializeApp(config);
 const auth = firebase.auth();
 const db = app.firestore();
+const functions = firebase.functions();
 
 const authUI = new firebaseui.auth.AuthUI(auth);
 
@@ -36,4 +38,4 @@ const authUIConfig = {
 };
 
 export default app;
-export { auth, db, authUI, authUIConfig };
+export { auth, db, authUI, authUIConfig, functions };

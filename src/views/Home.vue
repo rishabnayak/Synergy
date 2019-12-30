@@ -13,6 +13,11 @@ export default {
     user() {
       return this.$store.state.user;
     }
+  },
+  beforeMount() {
+    if (this.user) {
+      this.$router.push("/team");
+    }
   }
 };
 </script>
