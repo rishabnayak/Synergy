@@ -57,7 +57,7 @@ router.beforeEach((to, from, next) => {
       if (to.name == "profile") {
         next();
       } else {
-        if (user.role) {
+        if (user.originUID) {
           next();
         } else {
           next({

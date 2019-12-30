@@ -5,5 +5,7 @@
 # reviewed by someone else.
 
 functions/index.js @rishabnayak
+functions/newUser/* @rishabnayak
+functions/team/* @rishabnayak
 firestore.rules @rishabnayak
 src/* @rishabnayak @nampham148
