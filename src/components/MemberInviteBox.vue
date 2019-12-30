@@ -35,7 +35,6 @@ export default {
             alert("Cannot find this email");
             return;
           }
-
           results.forEach(async inviteeDoc => {
             let teamInviteData = {
               inviterID: this.user.uid,
