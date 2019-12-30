@@ -1,13 +1,15 @@
 <template>
-  <div>
-    <h1>Invite an user</h1>
-    <input
+  <v-form v-model="valid" @submit.prevent="inviteUser">
+    <h2>Invite an user</h2>
+    <v-text-field
       v-model="invitedEmail"
-      type="text"
-      placeholder="Enter their email..."
-    />
-    <button @click="inviteUser">Invite!</button>
-  </div>
+      :rules="emailRules"
+      label="Email"
+      required
+    >
+    </v-text-field>
+    <v-btn type="submit" :disabled="!valid"> Invite </v-btn>
+  </v-form>
 </template>
 
 <script>
@@ -17,7 +19,13 @@ export default {
   name: "MemberInviteBox",
   data: function() {
     return {
-      invitedEmail: ""
+      invitedEmail: "",
+      valid: false,
+      emailRules: [
+        v =>
+          /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) ||
+          "E-mail must be valid"
+      ]
     };
   },
   computed: {
