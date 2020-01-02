@@ -58,7 +58,7 @@ module.exports.populateTTBdata = functions.https.onRequest(async (req, res) => {
       )
         .then(() => {
           console.log("All finished");
-          res.status(200).send("Success!");
+          res.status(200).send("Success!\n");
           return;
         })
         .catch(err => {
