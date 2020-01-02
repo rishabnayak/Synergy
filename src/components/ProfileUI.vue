@@ -27,7 +27,7 @@
                 ></v-text-field>
               </v-flex>
             </v-layout>
-            <v-layout row>
+            <v-layout v-if="!uid" row>
               <v-flex xs12>
                 <v-text-field
                   v-model="originUID"
@@ -37,7 +37,9 @@
                 ></v-text-field>
               </v-flex>
             </v-layout>
-            <v-btn color="primary" @click="updateProfile">Update</v-btn>
+            <v-btn v-if="!uid" color="primary" @click="updateProfile"
+              >Update</v-btn
+            >
           </v-form>
         </v-card-text>
       </v-card>
@@ -46,12 +48,12 @@
 </template>
 
 <script>
-import store from "../store";
-import { functions } from "../firebase/init";
+import { db, functions } from "../firebase/init";
 export default {
   name: "ProfileUI",
   data() {
     return {
+      uid: this.$route.params.uid,
       name: null,
       email: null,
       originUID: null,
@@ -65,10 +67,25 @@ export default {
     }
   },
   async mounted() {
-    await store.dispatch("getUser");
-    this.name = this.user.displayName;
-    this.email = this.user.email;
-    this.originUID = this.user.originUID;
+    if (this.uid) {
+      let finduser = await db
+        .collection("users")
+        .doc(this.uid)
+        .get();
+      if (finduser.empty) {
+        this.$router.push({
+          name: "profile"
+        });
+      } else {
+        this.name = finduser.data().displayName;
+        this.email = finduser.data().email;
+        this.originUID = "";
+      }
+    } else {
+      this.name = this.user.displayName;
+      this.email = this.user.email;
+      this.originUID = this.user.originUID;
+    }
   },
   methods: {
     async updateProfile() {
@@ -78,7 +95,7 @@ export default {
           originUID: this.originUID
         });
         this.$store.dispatch("setUser").then(() => {
-          this.$router.push("/team");
+          this.$router.push("/");
         });
       }
     }

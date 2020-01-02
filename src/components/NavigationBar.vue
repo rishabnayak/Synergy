@@ -7,6 +7,9 @@
       <v-toolbar-items>
         <v-btn text @click="home()">Home</v-btn>
         <v-btn v-if="user" text @click="team()">Team</v-btn>
+        <v-btn v-if="user" text @click="recommendations()"
+          >Recommendations</v-btn
+        >
         <v-btn v-if="user" text @click="profile()">My Profile</v-btn>
         <v-btn icon>
           <v-icon v-if="user" @click="signOut()">mdi-export-variant</v-icon>
@@ -70,6 +73,9 @@ export default {
     },
     team() {
       this.$router.push("/team");
+    },
+    recommendations() {
+      this.$router.push("/recommendations");
     }
   }
 };

@@ -1,43 +1,51 @@
 <template>
-  <div>
-    <h1>Hello World!!!</h1>
-    <p>{{ user.uid }}</p>
-    <UserProfile
-      v-for="profile in recProfiles"
-      :key="profile.id"
-      :user="profile"
-    ></UserProfile>
-  </div>
+  <v-layout align-center justify-center>
+    <v-flex xs12 sm8 md4>
+      <v-card class="elevation-12">
+        <v-toolbar dark color="primary">
+          <v-toolbar-title>Recommendations</v-toolbar-title>
+        </v-toolbar>
+        <v-card-text>
+          <v-list>
+            <v-list-item-group v-model="recProfile" color="primary">
+              <v-list-item
+                v-for="(item, i) in recProfiles"
+                :key="i"
+                :to="{ name: 'profile', params: { uid: item.uid } }"
+              >
+                <v-list-item-content>
+                  <v-list-item-title v-text="item.name"></v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list-item-group>
+          </v-list>
+        </v-card-text>
+      </v-card>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
-import UserProfile from "../components/UserProfile";
 export default {
   name: "Recs",
-  components: {
-    UserProfile
-  },
-  data: function() {
-    // Recs dummy data -> should be replaced with real data from database
+  data() {
     return {
+      recProfile: null,
       recProfiles: [
         {
-          id: 1,
-          name: "User1",
-          age: 17
+          uid: 1,
+          name: "John"
         },
         {
-          id: 2,
-          name: "User2",
-          age: 18
+          uid: 2,
+          name: "Jack"
         }
       ]
     };
   },
   computed: {
-    // get authenticated user from firebase authentication
-    user: function() {
-      return this.$store.getters.getUser;
+    user() {
+      return this.$store.state.user;
     }
   }
 };
