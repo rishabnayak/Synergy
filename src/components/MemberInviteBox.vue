@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     inviteUser: function() {
-      db.collection("users")
+      db.collection("TTBUsers")
         .where("email", "==", this.invitedEmail)
         .get()
         .then(results => {
@@ -45,13 +45,14 @@ export default {
           }
           results.forEach(async inviteeDoc => {
             let teamInviteData = {
-              inviterID: this.user.uid,
-              inviteeID: inviteeDoc.data().uid,
+              inviterID: this.user.originUID,
+              inviteeID: inviteeDoc.data().originUID,
               teamID: this.user.teamID
             };
             await functions.httpsCallable("createInvite")({
               teamInviteData: teamInviteData,
-              teamID: this.user.teamID
+              teamID: this.user.teamID,
+              email: this.invitedEmail
             });
           });
         });

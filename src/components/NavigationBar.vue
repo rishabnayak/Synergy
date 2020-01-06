@@ -10,6 +10,7 @@
         <v-btn v-if="user" text @click="recommendations()"
           >Recommendations</v-btn
         >
+        <v-btn v-if="user" text @click="invites()">Invites</v-btn>
         <v-btn v-if="user" text @click="profile()">My Profile</v-btn>
         <v-btn icon>
           <v-icon v-if="user" @click="signOut()">mdi-export-variant</v-icon>
@@ -76,6 +77,9 @@ export default {
     },
     recommendations() {
       this.$router.push("/recommendations");
+    },
+    invites() {
+      this.$router.push("/invites");
     }
   }
 };

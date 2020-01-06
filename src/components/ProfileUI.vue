@@ -30,6 +30,15 @@
             <v-layout v-if="!uid" row>
               <v-flex xs12>
                 <v-text-field
+                  v-if="originUID"
+                  v-model="originUID"
+                  label="Hackathon UID"
+                  :rules="originUIDRules"
+                  name="uid"
+                  :disabled="true"
+                ></v-text-field>
+                <v-text-field
+                  v-else
                   v-model="originUID"
                   label="Hackathon UID"
                   :rules="originUIDRules"
@@ -69,19 +78,21 @@ export default {
   async mounted() {
     if (this.uid) {
       let finduser = await db
-        .collection("users")
-        .doc(this.uid)
+        .collection("TTBUsers")
+        .doc(this.uid.toString())
         .get();
       if (finduser.empty) {
         this.$router.push({
           name: "profile"
         });
       } else {
-        this.name = finduser.data().displayName;
+        // Public View
+        this.name = finduser.data().firstname + " " + finduser.data().lastname;
         this.email = finduser.data().email;
         this.originUID = "";
       }
     } else {
+      // Private View
       this.name = this.user.displayName;
       this.email = this.user.email;
       this.originUID = this.user.originUID;

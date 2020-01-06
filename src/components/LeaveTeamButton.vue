@@ -15,7 +15,8 @@ export default {
     async leaveTeam() {
       await functions.httpsCallable("leaveTeam")({
         teamID: this.user.teamID,
-        userID: this.user.uid
+        userID: this.user.uid,
+        userOriginUID: this.user.originUID
       });
       this.$store.dispatch("setUser");
     }
