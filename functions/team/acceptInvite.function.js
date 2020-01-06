@@ -4,7 +4,7 @@ const functions = require("firebase-functions");
 const db = admin.firestore();
 
 module.exports.acceptInvite = functions.https.onCall(async (data, context) => {
-  let userRef = db.collection("users").doc(data.inviteeID);
+  let userRef = db.collection("users").doc(data.userID);
   let teamRef = db.collection("teams").doc(data.teamID);
   await userRef.update({
     teamID: data.teamID

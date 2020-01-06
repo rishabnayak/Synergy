@@ -43,8 +43,24 @@ const routes = [
     }
   },
   {
+    path: "/invites",
+    name: "invites",
+    component: () => import("@/views/Invites.vue"),
+    meta: {
+      requiresAuth: true
+    }
+  },
+  {
     path: "/team",
     name: "team",
+    component: () => import("@/views/Team.vue"),
+    meta: {
+      requiresAuth: true
+    }
+  },
+  {
+    path: "/team/:teamID",
+    name: "otherteam",
     component: () => import("@/views/Team.vue"),
     meta: {
       requiresAuth: true

@@ -7,7 +7,7 @@ module.exports.leaveTeam = functions.https.onCall(async (data, context) => {
   let userRef = db.collection("users").doc(data.userID);
   let teamRef = db.collection("teams").doc(data.teamID);
   await teamRef.update({
-    teamMembers: admin.firestore.FieldValue.arrayRemove(data.userID)
+    teamMembers: admin.firestore.FieldValue.arrayRemove(data.userOriginUID)
   });
   await userRef.update({
     teamID: ""

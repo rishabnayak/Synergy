@@ -42,6 +42,7 @@ export default {
       if (result) {
         // accept
         await functions.httpsCallable("acceptInvite")({
+          userID: this.user.uid,
           inviteeID: this.teamInvite.inviteeID,
           teamID: this.teamInvite.teamID,
           inviteID: this.inviteID
