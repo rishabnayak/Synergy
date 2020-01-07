@@ -14,17 +14,20 @@
               required
             >
             </v-text-field>
+            <v-textarea
+              v-model="teamDescription"
+              :rules="descRules"
+              label="Team Description"
+              auto-grow
+              required
+            >
+            </v-textarea>
             <v-btn type="submit" :disabled="!valid"> Create </v-btn>
           </v-form>
         </v-flex>
       </v-layout>
     </v-container>
   </v-layout>
-  <!--
-    <h1>Create a Team</h1>
-    <input v-model="teamName" type="text" />
-    <button @click="createTeam">Create your Team</button>
-  -->
 </template>
 
 <script>
@@ -34,8 +37,10 @@ export default {
   data: function() {
     return {
       teamName: "",
+      teamDescription: "",
       valid: false,
-      nameRules: [v => !!v || "Name is required"]
+      nameRules: [v => !!v || "Name is required"],
+      descRules: [v => !!v || "Description is required"]
     };
   },
   computed: {
@@ -47,7 +52,8 @@ export default {
     async createTeam() {
       let teamData = {
         teamName: this.teamName,
-        teamMembers: [this.user.uid],
+        teamMembers: [this.user.originUID],
+        teamDescription: this.teamDescription,
         teamInvites: []
       };
       await functions.httpsCallable("createTeam")({
