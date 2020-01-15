@@ -29,7 +29,7 @@
             </v-layout>
             <v-layout v-if="!uid" row>
               <v-flex xs12>
-                <v-text-field
+                <!-- <v-text-field
                   v-if="originUID"
                   v-model="originUID"
                   label="Hackathon UID"
@@ -39,6 +39,12 @@
                 ></v-text-field>
                 <v-text-field
                   v-else
+                  v-model="originUID"
+                  label="Hackathon UID"
+                  :rules="originUIDRules"
+                  name="uid"
+                ></v-text-field> -->
+                <v-text-field
                   v-model="originUID"
                   label="Hackathon UID"
                   :rules="originUIDRules"
