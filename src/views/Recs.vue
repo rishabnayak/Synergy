@@ -62,7 +62,7 @@ export default {
   name: "Recs",
   data() {
     return {
-      recommendations: null,
+      recommendations: [],
       recProfiles: [],
       teamExists: null
     };
@@ -78,7 +78,9 @@ export default {
       .collection("TTBUsers")
       .doc(this.user.originUID)
       .get();
-    this.recommendations = finduser.data().recommendations;
+    finduser.data().recommendations.forEach(element => {
+      this.recommendations.push(element.replace(/'/g, ""));
+    });
     this.recommendations.forEach(async element => {
       let finduser = await db
         .collection("TTBUsers")
