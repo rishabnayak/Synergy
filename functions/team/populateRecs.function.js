@@ -16,7 +16,12 @@ module.exports.populateRecs = functions.https.onRequest(async (req, res) => {
     Promise.all(
       user_recs.map(async user_record => {
         let id = user_record[0];
-        let recommendations = user_record[2].slice(1, -1).split(", ");
+        let recommendations = user_record[2]
+          .slice(1, -1)
+          .split(", ")
+          .map(str => {
+            return str.slice(1, -1);
+          });
 
         let userRef = db.collection("TTBUsers").doc(id);
         let doc = await userRef.get();

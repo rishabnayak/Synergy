@@ -67,9 +67,10 @@ export default {
   name: "Recs",
   data() {
     return {
-      recommendations: null,
+      recommendations: [],
       recProfiles: [],
-      teamExists: null
+      teamExists: null,
+      findInvited: null
     };
   },
   computed: {
@@ -83,18 +84,28 @@ export default {
       .collection("TTBUsers")
       .doc(this.user.originUID)
       .get();
-    this.recommendations = finduser.data().recommendations;
+    finduser.data().recommendations.forEach(element => {
+      this.recommendations.push(element.replace(/'/g, ""));
+    });
     this.recommendations.forEach(async element => {
       let finduser = await db
         .collection("TTBUsers")
         .doc(element.toString())
         .get();
-      let findInvited = await db
-        .collection("teamInvites")
-        .where("inviteeID", "==", element)
-        .where("teamID", "==", this.user.teamID)
-        .get();
-      if (!findInvited.empty) {
+      if (!this.teamExists) {
+        this.findInvited = await db
+          .collection("teamInvites")
+          .where("inviteeID", "==", element)
+          .where("teamID", "==", "")
+          .get();
+      } else {
+        this.findInvited = await db
+          .collection("teamInvites")
+          .where("inviteeID", "==", element)
+          .where("teamID", "==", this.user.teamID)
+          .get();
+      }
+      if (!this.findInvited.empty) {
         this.recProfiles.push({
           uid: element,
           name: finduser.data().firstname + " " + finduser.data().lastname,
