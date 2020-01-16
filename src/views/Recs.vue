@@ -6,6 +6,11 @@
           <v-toolbar-title>Recommendations</v-toolbar-title>
         </v-toolbar>
         <v-card-text>
+          <v-progress-circular
+            v-if="recProfiles.length == 0"
+            indeterminate
+            color="primary"
+          ></v-progress-circular>
           <v-list two-line subheader>
             <v-list-item
               v-for="(item, i) in recProfiles"
