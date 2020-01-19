@@ -7,17 +7,7 @@
         </v-toolbar>
         <v-card-text>
           <v-form ref="form" v-model="valid">
-            <v-layout v-if="!uid" row>
-              <v-flex xs12>
-                <v-text-field
-                  v-model="name"
-                  label="Name"
-                  name="name"
-                  :rules="nameRules"
-                ></v-text-field>
-              </v-flex>
-            </v-layout>
-            <v-layout v-elserow>
+            <v-layout row>
               <v-flex xs12>
                 <v-text-field
                   v-model="name"
@@ -93,7 +83,6 @@ export default {
       email: null,
       originUID: null,
       originUIDRules: [val => !!val || "Origin UID Required"],
-      nameRules: [val => !!val || "Name Required"],
       valid: false,
       contact: null
     };
@@ -132,8 +121,7 @@ export default {
       if (this.$refs.form.validate()) {
         await functions.httpsCallable("updateOriginUID")({
           uid: this.user.uid,
-          originUID: this.originUID,
-          name: this.name
+          originUID: this.originUID
         });
         this.$store.dispatch("setUser").then(() => {
           this.$router.push("/");
