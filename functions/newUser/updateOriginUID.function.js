@@ -7,7 +7,8 @@ module.exports.updateOriginUID = functions.https.onCall(
   async (data, context) => {
     const mydb = db.collection("users").doc(data.uid);
     await mydb.update({
-      originUID: data.originUID
+      originUID: data.originUID,
+      displayName: data.name
     });
     return;
   }

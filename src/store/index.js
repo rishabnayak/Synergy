@@ -32,7 +32,7 @@ const actions = {
       // first time user
       await functions.httpsCallable("createNewUser")({
         uid: user.uid,
-        displayName: user.displayName,
+        displayName: user.displayName ? user.displayName : "",
         email: user.email
       });
       raid = await mydb.get();
