@@ -27,6 +27,16 @@
                 ></v-text-field>
               </v-flex>
             </v-layout>
+            <v-layout row>
+              <v-flex xs12>
+                <v-text-field
+                  v-model="contact"
+                  label="Contact"
+                  name="contact"
+                  readonly
+                ></v-text-field>
+              </v-flex>
+            </v-layout>
             <v-layout v-if="!uid" row>
               <v-flex xs12>
                 <!-- <v-text-field
@@ -45,15 +55,6 @@
                   name="uid"
                 ></v-text-field> -->
                 <v-text-field
-                  v-if="originUID"
-                  v-model="originUID"
-                  label="Hackathon UID"
-                  :rules="originUIDRules"
-                  name="uid"
-                  :disabled="true"
-                ></v-text-field>
-                <v-text-field
-                  v-else
                   v-model="originUID"
                   label="Hackathon UID"
                   :rules="originUIDRules"
@@ -82,7 +83,8 @@ export default {
       email: null,
       originUID: null,
       originUIDRules: [val => !!val || "Origin UID Required"],
-      valid: false
+      valid: false,
+      contact: null
     };
   },
   computed: {
@@ -104,6 +106,7 @@ export default {
         // Public View
         this.name = finduser.data().firstname + " " + finduser.data().lastname;
         this.email = finduser.data().email;
+        this.contact = finduser.data().phone;
         this.originUID = "";
       }
     } else {

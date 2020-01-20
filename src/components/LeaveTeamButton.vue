@@ -18,7 +18,9 @@ export default {
         userID: this.user.uid,
         userOriginUID: this.user.originUID
       });
-      this.$store.dispatch("setUser");
+      this.$store.dispatch("setUser").then(() => {
+        location.reload();
+      });
     }
   }
 };
