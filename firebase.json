@@ -21,5 +21,13 @@
         "destination": "/index.html"
       }
     ]
+  },
+  "emulators": {
+    "hosting": {
+      "port": 3000
+    },
+    "firestore": {
+      "port": 3001
+    }
   }
 }
