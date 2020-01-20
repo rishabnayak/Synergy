@@ -6112,3 +6112,368 @@ INFO: Detected HTTP/2 connection.
    - Path: "aws.secret"
    - Learn more at https://firebase.google.com/docs/functions/local-emulator
 [debug] [2020-01-20T13:03:30.580Z] [worker-~diagnostic~-765d4ade-3ed8-4e34-97b2-78f43c78d2b8]: IDLE
+[debug] [2020-01-20T13:05:32.437Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:05:32.453Z] File /home/qnam/Documents/Synergy/functions/team/populateTTBdata.function.js changed, reloading triggers
+[debug] [2020-01-20T13:05:33.455Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-20T13:05:33.455Z] [worker-~diagnostic~-765d4ade-3ed8-4e34-97b2-78f43c78d2b8]: FINISHING
+[debug] [2020-01-20T13:05:33.456Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-20T13:05:33.467Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-20T13:05:33.467Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-20T13:05:33.467Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-20T13:05:33.468Z] [worker-~diagnostic~-6f64a02d-363c-42d1-a2cd-0bdae4fc7d8b]: Assigning socketPath: /tmp/fire_emu_27455.sock
+[debug] [2020-01-20T13:05:33.468Z] [worker-~diagnostic~-6f64a02d-363c-42d1-a2cd-0bdae4fc7d8b]: BUSY
+[debug] [2020-01-20T13:05:33.471Z] [worker-~diagnostic~-765d4ade-3ed8-4e34-97b2-78f43c78d2b8]: exited
+[debug] [2020-01-20T13:05:33.471Z] [worker-~diagnostic~-765d4ade-3ed8-4e34-97b2-78f43c78d2b8]: FINISHED
+[debug] [2020-01-20T13:05:33.903Z] [runtime-status] [27455] Functions runtime initialized. {"cwd":"/home/qnam/Documents/Synergy/functions","node_version":"8.16.1"}
+[debug] [2020-01-20T13:05:33.905Z] [runtime-status] [27455] Disabled runtime features: undefined
+[debug] [2020-01-20T13:05:33.907Z] [runtime-status] [27455] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T13:05:33.908Z] [runtime-status] [27455] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:05:34.075Z] [runtime-status] [27455] Found google-gax at /home/qnam/Documents/Synergy/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-01-20T13:05:34.075Z] [runtime-status] [27455] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-01-20T13:05:34.116Z] [runtime-status] [27455] Checked functions.config() {"config":{}}
+[debug] [2020-01-20T13:05:34.117Z] [runtime-status] [27455] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:05:34.118Z] [runtime-status] [27455] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T13:05:34.118Z] [runtime-status] [27455] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:05:34.160Z] [runtime-status] [27455] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-01-20T13:05:34.177Z] [runtime-status] [27455] initializeApp(DEFAULT) {"databaseURL":"https://team-synergy-bu.firebaseio.com","storageBucket":"team-synergy-bu.appspot.com","projectId":"team-synergy-bu"}
+[debug] [2020-01-20T13:05:34.381Z] [runtime-status] [27455] config() parent accessed! {"parentKey":"aws","parentConfig":{}}
+[warn] ⚠  Non-existent functions.config() value requested!
+   - Path: "aws.key"
+   - Learn more at https://firebase.google.com/docs/functions/local-emulator
+[debug] [2020-01-20T13:05:34.381Z] [runtime-status] [27455] config() parent accessed! {"parentKey":"aws","parentConfig":{}}
+[warn] ⚠  Non-existent functions.config() value requested!
+   - Path: "aws.secret"
+   - Learn more at https://firebase.google.com/docs/functions/local-emulator
+[debug] [2020-01-20T13:05:34.424Z] [worker-~diagnostic~-6f64a02d-363c-42d1-a2cd-0bdae4fc7d8b]: IDLE
+[debug] [2020-01-20T13:05:43.790Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:05:44.792Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-20T13:05:44.792Z] [worker-~diagnostic~-6f64a02d-363c-42d1-a2cd-0bdae4fc7d8b]: FINISHING
+[debug] [2020-01-20T13:05:44.793Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-20T13:05:44.800Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-20T13:05:44.800Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-20T13:05:44.801Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-20T13:05:44.801Z] [worker-~diagnostic~-36ec1c02-3819-4a17-804a-a4ef1ae3f200]: Assigning socketPath: /tmp/fire_emu_27479.sock
+[debug] [2020-01-20T13:05:44.801Z] [worker-~diagnostic~-36ec1c02-3819-4a17-804a-a4ef1ae3f200]: BUSY
+[debug] [2020-01-20T13:05:44.802Z] [worker-~diagnostic~-6f64a02d-363c-42d1-a2cd-0bdae4fc7d8b]: exited
+[debug] [2020-01-20T13:05:44.802Z] [worker-~diagnostic~-6f64a02d-363c-42d1-a2cd-0bdae4fc7d8b]: FINISHED
+[debug] [2020-01-20T13:05:45.315Z] [runtime-status] [27479] Functions runtime initialized. {"cwd":"/home/qnam/Documents/Synergy/functions","node_version":"8.16.1"}
+[debug] [2020-01-20T13:05:45.317Z] [runtime-status] [27479] Disabled runtime features: undefined
+[debug] [2020-01-20T13:05:45.318Z] [runtime-status] [27479] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T13:05:45.319Z] [runtime-status] [27479] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:05:45.499Z] [runtime-status] [27479] Found google-gax at /home/qnam/Documents/Synergy/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-01-20T13:05:45.499Z] [runtime-status] [27479] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-01-20T13:05:45.541Z] [runtime-status] [27479] Checked functions.config() {"config":{}}
+[debug] [2020-01-20T13:05:45.542Z] [runtime-status] [27479] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:05:45.543Z] [runtime-status] [27479] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T13:05:45.543Z] [runtime-status] [27479] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:05:45.587Z] [runtime-status] [27479] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-01-20T13:05:45.604Z] [runtime-status] [27479] initializeApp(DEFAULT) {"databaseURL":"https://team-synergy-bu.firebaseio.com","storageBucket":"team-synergy-bu.appspot.com","projectId":"team-synergy-bu"}
+[debug] [2020-01-20T13:05:45.839Z] [runtime-status] [27479] config() parent accessed! {"parentKey":"aws","parentConfig":{}}
+[warn] ⚠  Non-existent functions.config() value requested!
+   - Path: "aws.key"
+   - Learn more at https://firebase.google.com/docs/functions/local-emulator
+[debug] [2020-01-20T13:05:45.840Z] [runtime-status] [27479] config() parent accessed! {"parentKey":"aws","parentConfig":{}}
+[warn] ⚠  Non-existent functions.config() value requested!
+   - Path: "aws.secret"
+   - Learn more at https://firebase.google.com/docs/functions/local-emulator
+[warn] ⚠  /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js:11
+<<<<<<< HEAD
+^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at files.forEach.file (/home/qnam/Documents/Synergy/functions/index.js:12:26)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-01-20T13:05:45.866Z] [worker-~diagnostic~-36ec1c02-3819-4a17-804a-a4ef1ae3f200]: exited
+[debug] [2020-01-20T13:05:45.866Z] [worker-~diagnostic~-36ec1c02-3819-4a17-804a-a4ef1ae3f200]: FINISHED
+[debug] [2020-01-20T13:06:00.562Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:00.740Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:00.909Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:01.910Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 0
+[debug] [2020-01-20T13:06:01.922Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-20T13:06:01.922Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-20T13:06:01.922Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-20T13:06:01.922Z] [worker-~diagnostic~-3297e692-0c53-4ef3-8dda-1ca988f7742c]: Assigning socketPath: /tmp/fire_emu_27498.sock
+[debug] [2020-01-20T13:06:01.922Z] [worker-~diagnostic~-3297e692-0c53-4ef3-8dda-1ca988f7742c]: BUSY
+[debug] [2020-01-20T13:06:02.300Z] [runtime-status] [27498] Functions runtime initialized. {"cwd":"/home/qnam/Documents/Synergy/functions","node_version":"8.16.1"}
+[debug] [2020-01-20T13:06:02.302Z] [runtime-status] [27498] Disabled runtime features: undefined
+[debug] [2020-01-20T13:06:02.304Z] [runtime-status] [27498] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T13:06:02.305Z] [runtime-status] [27498] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:06:02.487Z] [runtime-status] [27498] Found google-gax at /home/qnam/Documents/Synergy/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-01-20T13:06:02.487Z] [runtime-status] [27498] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-01-20T13:06:02.533Z] [runtime-status] [27498] Checked functions.config() {"config":{}}
+[debug] [2020-01-20T13:06:02.534Z] [runtime-status] [27498] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:06:02.535Z] [runtime-status] [27498] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T13:06:02.535Z] [runtime-status] [27498] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:06:02.579Z] [runtime-status] [27498] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-01-20T13:06:02.596Z] [runtime-status] [27498] initializeApp(DEFAULT) {"databaseURL":"https://team-synergy-bu.firebaseio.com","storageBucket":"team-synergy-bu.appspot.com","projectId":"team-synergy-bu"}
+[debug] [2020-01-20T13:06:02.821Z] [runtime-status] [27498] config() parent accessed! {"parentKey":"aws","parentConfig":{}}
+[warn] ⚠  Non-existent functions.config() value requested!
+   - Path: "aws.key"
+   - Learn more at https://firebase.google.com/docs/functions/local-emulator
+[debug] [2020-01-20T13:06:02.822Z] [runtime-status] [27498] config() parent accessed! {"parentKey":"aws","parentConfig":{}}
+[warn] ⚠  Non-existent functions.config() value requested!
+   - Path: "aws.secret"
+   - Learn more at https://firebase.google.com/docs/functions/local-emulator
+[warn] ⚠  /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js:11
+<<<<<<< HEAD
+^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at files.forEach.file (/home/qnam/Documents/Synergy/functions/index.js:12:26)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-01-20T13:06:02.849Z] [worker-~diagnostic~-3297e692-0c53-4ef3-8dda-1ca988f7742c]: exited
+[debug] [2020-01-20T13:06:02.849Z] [worker-~diagnostic~-3297e692-0c53-4ef3-8dda-1ca988f7742c]: FINISHED
+[debug] [2020-01-20T13:06:05.160Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:05.329Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:05.490Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:05.661Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:05.833Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:06.013Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:07.020Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-01-20T13:06:07.043Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-20T13:06:07.044Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-20T13:06:07.044Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-20T13:06:07.048Z] [worker-~diagnostic~-95cbf549-ca96-442c-8a49-25508375155e]: Assigning socketPath: /tmp/fire_emu_27513.sock
+[debug] [2020-01-20T13:06:07.048Z] [worker-~diagnostic~-95cbf549-ca96-442c-8a49-25508375155e]: BUSY
+[debug] [2020-01-20T13:06:07.512Z] [runtime-status] [27513] Functions runtime initialized. {"cwd":"/home/qnam/Documents/Synergy/functions","node_version":"8.16.1"}
+[debug] [2020-01-20T13:06:07.514Z] [runtime-status] [27513] Disabled runtime features: undefined
+[debug] [2020-01-20T13:06:07.516Z] [runtime-status] [27513] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T13:06:07.516Z] [runtime-status] [27513] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:06:07.696Z] [runtime-status] [27513] Found google-gax at /home/qnam/Documents/Synergy/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-01-20T13:06:07.697Z] [runtime-status] [27513] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-01-20T13:06:07.738Z] [runtime-status] [27513] Checked functions.config() {"config":{}}
+[debug] [2020-01-20T13:06:07.739Z] [runtime-status] [27513] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:06:07.740Z] [runtime-status] [27513] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T13:06:07.740Z] [runtime-status] [27513] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:06:07.782Z] [runtime-status] [27513] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-01-20T13:06:07.798Z] [runtime-status] [27513] initializeApp(DEFAULT) {"databaseURL":"https://team-synergy-bu.firebaseio.com","storageBucket":"team-synergy-bu.appspot.com","projectId":"team-synergy-bu"}
+[debug] [2020-01-20T13:06:08.008Z] [runtime-status] [27513] config() parent accessed! {"parentKey":"aws","parentConfig":{}}
+[warn] ⚠  Non-existent functions.config() value requested!
+   - Path: "aws.key"
+   - Learn more at https://firebase.google.com/docs/functions/local-emulator
+[debug] [2020-01-20T13:06:08.008Z] [runtime-status] [27513] config() parent accessed! {"parentKey":"aws","parentConfig":{}}
+[warn] ⚠  Non-existent functions.config() value requested!
+   - Path: "aws.secret"
+   - Learn more at https://firebase.google.com/docs/functions/local-emulator
+[warn] ⚠  /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js:37
+<<<<<<< HEAD
+^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at files.forEach.file (/home/qnam/Documents/Synergy/functions/index.js:12:26)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-01-20T13:06:08.035Z] [worker-~diagnostic~-95cbf549-ca96-442c-8a49-25508375155e]: exited
+[debug] [2020-01-20T13:06:08.035Z] [worker-~diagnostic~-95cbf549-ca96-442c-8a49-25508375155e]: FINISHED
+[debug] [2020-01-20T13:06:39.055Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:39.222Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:39.354Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:40.360Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-01-20T13:06:40.366Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-20T13:06:40.366Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-20T13:06:40.366Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-20T13:06:40.366Z] [worker-~diagnostic~-70b34f64-cc2c-4bd1-a4cd-36d745de9b6b]: Assigning socketPath: /tmp/fire_emu_27533.sock
+[debug] [2020-01-20T13:06:40.367Z] [worker-~diagnostic~-70b34f64-cc2c-4bd1-a4cd-36d745de9b6b]: BUSY
+[debug] [2020-01-20T13:06:40.637Z] [runtime-status] [27533] Functions runtime initialized. {"cwd":"/home/qnam/Documents/Synergy/functions","node_version":"8.16.1"}
+[debug] [2020-01-20T13:06:40.643Z] [runtime-status] [27533] Disabled runtime features: undefined
+[debug] [2020-01-20T13:06:40.646Z] [runtime-status] [27533] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T13:06:40.647Z] [runtime-status] [27533] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:06:40.858Z] [runtime-status] [27533] Found google-gax at /home/qnam/Documents/Synergy/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-01-20T13:06:40.859Z] [runtime-status] [27533] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-01-20T13:06:40.902Z] [runtime-status] [27533] Checked functions.config() {"config":{}}
+[debug] [2020-01-20T13:06:40.902Z] [runtime-status] [27533] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:06:40.903Z] [runtime-status] [27533] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T13:06:40.903Z] [runtime-status] [27533] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:06:40.945Z] [runtime-status] [27533] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-01-20T13:06:40.961Z] [runtime-status] [27533] initializeApp(DEFAULT) {"databaseURL":"https://team-synergy-bu.firebaseio.com","storageBucket":"team-synergy-bu.appspot.com","projectId":"team-synergy-bu"}
+[debug] [2020-01-20T13:06:41.189Z] [runtime-status] [27533] config() parent accessed! {"parentKey":"aws","parentConfig":{}}
+[warn] ⚠  Non-existent functions.config() value requested!
+   - Path: "aws.key"
+   - Learn more at https://firebase.google.com/docs/functions/local-emulator
+[debug] [2020-01-20T13:06:41.190Z] [runtime-status] [27533] config() parent accessed! {"parentKey":"aws","parentConfig":{}}
+[warn] ⚠  Non-existent functions.config() value requested!
+   - Path: "aws.secret"
+   - Learn more at https://firebase.google.com/docs/functions/local-emulator
+[warn] ⚠  /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js:37
+<<<<<<< HEAD
+^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at files.forEach.file (/home/qnam/Documents/Synergy/functions/index.js:12:26)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-01-20T13:06:41.219Z] [worker-~diagnostic~-70b34f64-cc2c-4bd1-a4cd-36d745de9b6b]: exited
+[debug] [2020-01-20T13:06:41.219Z] [worker-~diagnostic~-70b34f64-cc2c-4bd1-a4cd-36d745de9b6b]: FINISHED
+[debug] [2020-01-20T13:06:44.831Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:44.987Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:45.150Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:45.334Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:45.501Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:45.661Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:45.837Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:46.838Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-01-20T13:06:46.849Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-20T13:06:46.849Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-20T13:06:46.849Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-20T13:06:46.849Z] [worker-~diagnostic~-1dc2071f-c62a-4733-83ed-c3d43b9cabed]: Assigning socketPath: /tmp/fire_emu_27547.sock
+[debug] [2020-01-20T13:06:46.849Z] [worker-~diagnostic~-1dc2071f-c62a-4733-83ed-c3d43b9cabed]: BUSY
+[debug] [2020-01-20T13:06:47.280Z] [runtime-status] [27547] Functions runtime initialized. {"cwd":"/home/qnam/Documents/Synergy/functions","node_version":"8.16.1"}
+[debug] [2020-01-20T13:06:47.282Z] [runtime-status] [27547] Disabled runtime features: undefined
+[debug] [2020-01-20T13:06:47.284Z] [runtime-status] [27547] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T13:06:47.285Z] [runtime-status] [27547] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:06:47.490Z] [runtime-status] [27547] Found google-gax at /home/qnam/Documents/Synergy/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-01-20T13:06:47.491Z] [runtime-status] [27547] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-01-20T13:06:47.535Z] [runtime-status] [27547] Checked functions.config() {"config":{}}
+[debug] [2020-01-20T13:06:47.536Z] [runtime-status] [27547] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:06:47.536Z] [runtime-status] [27547] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T13:06:47.537Z] [runtime-status] [27547] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:06:47.581Z] [runtime-status] [27547] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-01-20T13:06:47.599Z] [runtime-status] [27547] initializeApp(DEFAULT) {"databaseURL":"https://team-synergy-bu.firebaseio.com","storageBucket":"team-synergy-bu.appspot.com","projectId":"team-synergy-bu"}
+[debug] [2020-01-20T13:06:47.815Z] [runtime-status] [27547] config() parent accessed! {"parentKey":"aws","parentConfig":{}}
+[warn] ⚠  Non-existent functions.config() value requested!
+   - Path: "aws.key"
+   - Learn more at https://firebase.google.com/docs/functions/local-emulator
+[debug] [2020-01-20T13:06:47.815Z] [runtime-status] [27547] config() parent accessed! {"parentKey":"aws","parentConfig":{}}
+[warn] ⚠  Non-existent functions.config() value requested!
+   - Path: "aws.secret"
+   - Learn more at https://firebase.google.com/docs/functions/local-emulator
+[debug] [2020-01-20T13:06:47.863Z] [worker-~diagnostic~-1dc2071f-c62a-4733-83ed-c3d43b9cabed]: IDLE
+[debug] [2020-01-20T13:06:55.365Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:55.520Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:55.696Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:55.882Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:06:56.887Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-20T13:06:56.887Z] [worker-~diagnostic~-1dc2071f-c62a-4733-83ed-c3d43b9cabed]: FINISHING
+[debug] [2020-01-20T13:06:56.903Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-20T13:06:56.903Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-20T13:06:56.903Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-20T13:06:56.904Z] [worker-~diagnostic~-a48c97ac-ba89-42d5-9b6b-7b1bc8a7a731]: Assigning socketPath: /tmp/fire_emu_27562.sock
+[debug] [2020-01-20T13:06:56.904Z] [worker-~diagnostic~-a48c97ac-ba89-42d5-9b6b-7b1bc8a7a731]: BUSY
+[debug] [2020-01-20T13:06:56.907Z] [worker-~diagnostic~-1dc2071f-c62a-4733-83ed-c3d43b9cabed]: exited
+[debug] [2020-01-20T13:06:56.907Z] [worker-~diagnostic~-1dc2071f-c62a-4733-83ed-c3d43b9cabed]: FINISHED
+[debug] [2020-01-20T13:06:57.168Z] [runtime-status] [27562] Functions runtime initialized. {"cwd":"/home/qnam/Documents/Synergy/functions","node_version":"8.16.1"}
+[debug] [2020-01-20T13:06:57.170Z] [runtime-status] [27562] Disabled runtime features: undefined
+[debug] [2020-01-20T13:06:57.171Z] [runtime-status] [27562] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T13:06:57.172Z] [runtime-status] [27562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:06:57.342Z] [runtime-status] [27562] Found google-gax at /home/qnam/Documents/Synergy/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-01-20T13:06:57.342Z] [runtime-status] [27562] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-01-20T13:06:57.385Z] [runtime-status] [27562] Checked functions.config() {"config":{}}
+[debug] [2020-01-20T13:06:57.386Z] [runtime-status] [27562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:06:57.386Z] [runtime-status] [27562] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T13:06:57.387Z] [runtime-status] [27562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:06:57.431Z] [runtime-status] [27562] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-01-20T13:06:57.447Z] [runtime-status] [27562] initializeApp(DEFAULT) {"databaseURL":"https://team-synergy-bu.firebaseio.com","storageBucket":"team-synergy-bu.appspot.com","projectId":"team-synergy-bu"}
+[debug] [2020-01-20T13:06:57.651Z] [runtime-status] [27562] config() parent accessed! {"parentKey":"aws","parentConfig":{}}
+[warn] ⚠  Non-existent functions.config() value requested!
+   - Path: "aws.key"
+   - Learn more at https://firebase.google.com/docs/functions/local-emulator
+[debug] [2020-01-20T13:06:57.652Z] [runtime-status] [27562] config() parent accessed! {"parentKey":"aws","parentConfig":{}}
+[warn] ⚠  Non-existent functions.config() value requested!
+   - Path: "aws.secret"
+   - Learn more at https://firebase.google.com/docs/functions/local-emulator
+[debug] [2020-01-20T13:06:57.699Z] [worker-~diagnostic~-a48c97ac-ba89-42d5-9b6b-7b1bc8a7a731]: IDLE
+[debug] [2020-01-20T13:07:01.090Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:07:01.251Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:07:01.407Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:07:01.581Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:07:02.582Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-20T13:07:02.582Z] [worker-~diagnostic~-a48c97ac-ba89-42d5-9b6b-7b1bc8a7a731]: FINISHING
+[debug] [2020-01-20T13:07:02.583Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-20T13:07:02.594Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-20T13:07:02.595Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-20T13:07:02.595Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-20T13:07:02.595Z] [worker-~diagnostic~-13cc4fe7-9426-4148-bf33-ca0a7a3d9fa8]: Assigning socketPath: /tmp/fire_emu_27577.sock
+[debug] [2020-01-20T13:07:02.595Z] [worker-~diagnostic~-13cc4fe7-9426-4148-bf33-ca0a7a3d9fa8]: BUSY
+[debug] [2020-01-20T13:07:02.598Z] [worker-~diagnostic~-a48c97ac-ba89-42d5-9b6b-7b1bc8a7a731]: exited
+[debug] [2020-01-20T13:07:02.598Z] [worker-~diagnostic~-a48c97ac-ba89-42d5-9b6b-7b1bc8a7a731]: FINISHED
+[debug] [2020-01-20T13:07:03.048Z] [runtime-status] [27577] Functions runtime initialized. {"cwd":"/home/qnam/Documents/Synergy/functions","node_version":"8.16.1"}
+[debug] [2020-01-20T13:07:03.050Z] [runtime-status] [27577] Disabled runtime features: undefined
+[debug] [2020-01-20T13:07:03.051Z] [runtime-status] [27577] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T13:07:03.052Z] [runtime-status] [27577] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:07:03.230Z] [runtime-status] [27577] Found google-gax at /home/qnam/Documents/Synergy/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-01-20T13:07:03.230Z] [runtime-status] [27577] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-01-20T13:07:03.276Z] [runtime-status] [27577] Checked functions.config() {"config":{}}
+[debug] [2020-01-20T13:07:03.277Z] [runtime-status] [27577] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:07:03.278Z] [runtime-status] [27577] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T13:07:03.278Z] [runtime-status] [27577] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:07:03.321Z] [runtime-status] [27577] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-01-20T13:07:03.338Z] [runtime-status] [27577] initializeApp(DEFAULT) {"databaseURL":"https://team-synergy-bu.firebaseio.com","storageBucket":"team-synergy-bu.appspot.com","projectId":"team-synergy-bu"}
+[debug] [2020-01-20T13:07:03.550Z] [runtime-status] [27577] config() parent accessed! {"parentKey":"aws","parentConfig":{}}
+[warn] ⚠  Non-existent functions.config() value requested!
+   - Path: "aws.key"
+   - Learn more at https://firebase.google.com/docs/functions/local-emulator
+[debug] [2020-01-20T13:07:03.551Z] [runtime-status] [27577] config() parent accessed! {"parentKey":"aws","parentConfig":{}}
+[warn] ⚠  Non-existent functions.config() value requested!
+   - Path: "aws.secret"
+   - Learn more at https://firebase.google.com/docs/functions/local-emulator
+[debug] [2020-01-20T13:07:03.595Z] [worker-~diagnostic~-13cc4fe7-9426-4148-bf33-ca0a7a3d9fa8]: IDLE
+[debug] [2020-01-20T13:07:06.685Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:07:06.838Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:07:06.994Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:07:07.157Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:07:07.346Z] File /home/qnam/Documents/Synergy/functions/team/populateRecs.function.js changed, reloading triggers
+[debug] [2020-01-20T13:07:08.347Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-20T13:07:08.348Z] [worker-~diagnostic~-13cc4fe7-9426-4148-bf33-ca0a7a3d9fa8]: FINISHING
+[debug] [2020-01-20T13:07:08.348Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-20T13:07:08.357Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-20T13:07:08.357Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-20T13:07:08.357Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-20T13:07:08.358Z] [worker-~diagnostic~-89a9b47b-b32a-4754-b875-705c9ef6989a]: Assigning socketPath: /tmp/fire_emu_27592.sock
+[debug] [2020-01-20T13:07:08.358Z] [worker-~diagnostic~-89a9b47b-b32a-4754-b875-705c9ef6989a]: BUSY
+[debug] [2020-01-20T13:07:08.360Z] [worker-~diagnostic~-13cc4fe7-9426-4148-bf33-ca0a7a3d9fa8]: exited
+[debug] [2020-01-20T13:07:08.360Z] [worker-~diagnostic~-13cc4fe7-9426-4148-bf33-ca0a7a3d9fa8]: FINISHED
+[debug] [2020-01-20T13:07:08.702Z] [runtime-status] [27592] Functions runtime initialized. {"cwd":"/home/qnam/Documents/Synergy/functions","node_version":"8.16.1"}
+[debug] [2020-01-20T13:07:08.704Z] [runtime-status] [27592] Disabled runtime features: undefined
+[debug] [2020-01-20T13:07:08.706Z] [runtime-status] [27592] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T13:07:08.707Z] [runtime-status] [27592] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:07:08.899Z] [runtime-status] [27592] Found google-gax at /home/qnam/Documents/Synergy/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-01-20T13:07:08.899Z] [runtime-status] [27592] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-01-20T13:07:08.943Z] [runtime-status] [27592] Checked functions.config() {"config":{}}
+[debug] [2020-01-20T13:07:08.944Z] [runtime-status] [27592] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:07:08.945Z] [runtime-status] [27592] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T13:07:08.946Z] [runtime-status] [27592] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T13:07:08.992Z] [runtime-status] [27592] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/qnam/Documents/Synergy/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-01-20T13:07:09.010Z] [runtime-status] [27592] initializeApp(DEFAULT) {"databaseURL":"https://team-synergy-bu.firebaseio.com","storageBucket":"team-synergy-bu.appspot.com","projectId":"team-synergy-bu"}
+[debug] [2020-01-20T13:07:09.221Z] [runtime-status] [27592] config() parent accessed! {"parentKey":"aws","parentConfig":{}}
+[warn] ⚠  Non-existent functions.config() value requested!
+   - Path: "aws.key"
+   - Learn more at https://firebase.google.com/docs/functions/local-emulator
+[debug] [2020-01-20T13:07:09.222Z] [runtime-status] [27592] config() parent accessed! {"parentKey":"aws","parentConfig":{}}
+[warn] ⚠  Non-existent functions.config() value requested!
+   - Path: "aws.secret"
+   - Learn more at https://firebase.google.com/docs/functions/local-emulator
+[debug] [2020-01-20T13:07:09.276Z] [worker-~diagnostic~-89a9b47b-b32a-4754-b875-705c9ef6989a]: IDLE

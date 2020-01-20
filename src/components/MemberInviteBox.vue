@@ -46,7 +46,7 @@ export default {
           results.forEach(async inviteeDoc => {
             let teamInviteData = {
               inviterID: this.user.originUID,
-              inviteeID: inviteeDoc.data().originUID,
+              inviteeID: inviteeDoc.data().id,
               teamID: this.user.teamID
             };
             await functions.httpsCallable("createInvite")({
