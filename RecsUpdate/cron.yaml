@@ -1,0 +1,4 @@
+cron:
+- description: "update recommendations"
+  url: /update
+  schedule: every 3 hours
