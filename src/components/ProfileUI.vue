@@ -29,6 +29,21 @@
             </v-layout>
             <v-layout row>
               <v-flex xs12>
+                <!-- <v-text-field
+                  v-if="originUID"
+                  v-model="originUID"
+                  label="Hackathon UID"
+                  :rules="originUIDRules"
+                  name="uid"
+                  :disabled="true"
+                ></v-text-field>
+                <v-text-field
+                  v-else
+                  v-model="originUID"
+                  label="Hackathon UID"
+                  :rules="originUIDRules"
+                  name="uid"
+                ></v-text-field> -->
                 <v-text-field
                   v-model="contact"
                   label="Contact"

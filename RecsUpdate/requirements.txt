@@ -1,0 +1,10 @@
+numpy
+pandas
+seaborn
+sklearn
+scipy
+flask
+configparser
+psycopg2-binary
+PyGreSQL
+requests

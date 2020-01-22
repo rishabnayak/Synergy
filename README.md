@@ -67,6 +67,25 @@ To deploy only functions,
 firebase deploy --only functions
 ```
 
+## Update recommendations
+
+To run the server locally, fill in input database credentials in RecsUpdate/dadtabase.ini and run
+
+```bash
+cd RecsUpdate
+export FLASK_APP=main.py
+python -m flask run
+```
+
+To make an update run, send a GET http server to /update.
+
+To deploy,
+
+```bash
+cd RecsUpdate
+gcloud app deploy
+```
+
 ## Contributing
 
 To contribute to Synergy, view our [contribution guide](https://github.com/rishabnayak/Synergy/blob/master/CONTRIBUTING.md).
