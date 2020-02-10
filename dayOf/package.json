@@ -1,0 +1,15 @@
+{
+  "name": "dayof",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Rishab Nayak <rishab@bu.edu> (rishabnayak.me)",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.610.0"
+  }
+}
